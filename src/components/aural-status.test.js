@@ -1,0 +1,18 @@
+import React from 'react';
+
+import { shallow } from 'enzyme';
+
+import AuralStatus from './aural-status';
+
+describe('<AuralStatus />', () => {
+	it('Renders without crashing', () => {
+		shallow(<AuralStatus />);
+	});
+
+	it('Renders an Aural Status Update', () => {
+		let TEST_STATUS = 'You are listening to the game'
+
+		let wrapper = shallow(<AuralStatus auralStatus={TEST_STATUS} /> );
+		expect(wrapper.contains(TEST_STATUS)).toEqual(true);
+	});
+});
