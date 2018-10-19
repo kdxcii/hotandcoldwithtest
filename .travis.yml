@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: er0iub2ZDXAyS8m9gL7Fudc41z4k3nV4Gdl9JKVaStjQUFyFkavcNnZ12xW3xo6MO3HjIinaFCxA5gjk3ZyfAMctrG5G7FYMwXtCX/DvRid0+AmPzSS+J2huMIxPoPDf4Erwq2G6eioEJ3JTsIywCOfseZVlC3CGogBIjyu2U5kMwgSvAWVx54Ryvd5Y3SNL3gKvmDI+PWgbP9rfOPv5pWqeeyPQ7Q6y88k01RN/TXujZbBZpXM3KlF6Gqd2CArfcFzdM4VT/LpslGhKAtM57MbXcPvj8RUZwLl/Np6L3D2nvOcdVjyHdWJVT8sEBRoPT2XFwZnTlVSnAG2u3defWad5M3IWmoP2UTUi1ncr9cKkm2DdmmoW2ymG0Eyak3QYrHHwz8uDPYHK76srN476gyqnIqCXKuc1XxG9fCfHIDNMsGlJ4dlLLs8+Ck4Xilf5trY/rU3dKtA61es6vzyaQMNxlE2Z1cxeysENTcEX3UQ2B6OTNHxN1DedNBhTm7VaDiaRjxxAOYljUwr67HzpKQJ9prDNmNv/fA42Pw+njwmKygS/K0mwkGhjsl0oYzKDazqt1W36uTOPRkUllTix38Nhpw54HqOQHMUMxNW0DK8F5GmY8bSzD4NXE1gGFnthzMc+KR0IrtRSxhI5K3jfb8LMh9iVCny1KHLojI4u5HU=
+  app: radiant-springs-71930
+  on:
+    repo: kdxcii/hotandcoldwithtest
